@@ -8,7 +8,6 @@ const PG_2 = document.querySelector (".plans-info");
 const PG_3 = document.querySelector (".add-ons");
 const PG_4 = document.querySelector (".finish-up");
 const PG_5 = document.querySelector (".appreciation");
-// const bioNEXT = document.getElementById ("btn-1");
 
 Step_1.onclick = () => {
     PG_1.style.display = "block";
@@ -53,17 +52,27 @@ Step_4.onclick = () => {
 //     }
 // }
 
-    let name = document.getElementById("client-name");
-    let phone = document.getElementById("client-phone");
+    let name = document.getElementById ("client-name");
+    let phone = document.getElementById ("client-phone");
+    const bioNEXT = document.getElementById ("btn-1");
 
 function is_string(name) {
     return typeof name === "string";
 }
 
+function is_number(phone) {
+    return !isNaN(phone) && typeof phone === "number";
+}
+
 bioNEXT.onclick = () => {
-  if (is_string(name.value)) { // Access the value of the input element
+    console.log (name.value);
+    console.log (phone.value);
+  if (is_string(name.value) && is_number(phone.value)) { // Access the value of the input element
     console.log("well-done");
     } else {
     console.log("sorry");
+    PG_1.style.display = "none";
+    PG_2.style.display = "block";
+    revert.style.opacity = "100";
     }
 };
