@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="bg-light">
+    <div class="container-fluid">
+        <div class="background_1 d-md-none"><img src="./assets/images/bg-sidebar-mobile.svg" alt="mobile background" class="bg1_IMG"></div>
+        <div class="row justify-content-center">
+            <div class="col-10 col-md-8">
+                <div class="content-box p-3 mt-5 d-flex gap-5 bg-white">
+                    <div class="nav-box left-wing">
+                        <!-- <div class="background_1 d-md-none"><img src="./assets/images/bg-sidebar-mobile.svg" alt="mobile background"></div> -->
+                        
+                        <div class="background_2">
+                            <ul class="navbar d-flex d-md-grid p-3 mt-3">
+                                <li class="nav-list d-md-flex align-items-center">
+                                    <span class="btn nav-1 btn-md">1</span>
+                                    <span class="ms-3 text-white d-none d-md-block">
+                                    <span class="small">STEP 1</span>
+                                    <p class="small fw-bold">YOUR INFO</p>
+                                    </span>
+                                </li>
+                                <li class="nav-list d-md-flex align-items-center">
+                                    <span class="btn nav-2 btn-md">2</span>
+                                    <span class="ms-3 text-white d-none d-md-block">
+                                    <span class="small">STEP 2</span>
+                                    <p class="small fw-bold">SELECT PLAN</p>
+                                    </span>
+                                </li>
+                                <li class="nav-list d-md-flex align-items-center">
+                                    <span class="btn nav-3 btn-md">3</span>
+                                    <span class="ms-3 text-white d-none d-md-block">
+                                    <span class="small">STEP 3</span>
+                                    <p class="small fw-bold">ADD-ONS</p>
+                                    </span>
+                                </li>
+                                <li class="nav-list d-md-flex align-items-center">
+                                    <span class="btn nav-4 btn-md">4</span>
+                                    <span class="ms-3 text-white d-none d-md-block">
+                                    <span class="small">STEP 4</span>
+                                    <p class="small fw-bold">SUMMARY</p>
+                                    </span>
+                                </li>
+                            </ul><img src="./assets/images/bg-sidebar-desktop.svg" alt="desktop background" class="d-none d-md-block"></div>
+                    </div>
+                    <div class="right-wing p-3">
+                        <div class="data-box">
+                            <div class="bio-info">
+                                <div class="h3">Personal Info</div>
+                                <div class="text-muted">Please provide your name, email address, and phone number.</div>
+
+                                <form action="" class="mt-3">
+                                    <label for="client-name" class="form-label">Name</label>
+                                    <input type="text" placeholder="e.g. Cyprian Ogbang" id="client-name" class="form-control">
+                                    <label for="client-mail" class="form-label">Email Address</label>
+                                    <input type="email" placeholder="e.g. ogbangcyprian360@gmail.com" id="client-mail" class="form-control">
+                                    <label for="client-phone" class="form-label">Phone Number</label>
+                                    <input type="tel" placeholder="+234 805 510 33776" id="client-phone" class="form-control">
+                                    <div class="wing-footer mt-5 bg-white">
+                                        <!-- <div class="btn btn-md text-muted return-btn">Go Back</div> -->
+                                        <label for="bioNEXT" class="btn btn-md text-muted return-btn">Go Back</label>
+                                        <input type="button" id="bioNEXT">
+                                        <label for="btn-2" class="btn btn-md next-btn">Next step</label>
+                                        <input type="button" id="btn-2">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="plans-info">
+                                <div class="h3">Select your plan</div>
+                                <div class="text-muted">You have the option of monthly or yearly billing</div>
+                                <div class="row justify-content-center mt-4">
+                                    <div class="col-12 d-grid d-md-flex gap-3">
+                                        <div class="card" style="width: 8rem;">
+                                            <div class="card-body">
+                                                <div class="card-title"><img src="./assets/images/icon-arcade.svg" alt="arcade icon"></div>
+                                                <div class="card_footer mt-3">
+                                                    <div class="monthly">
+                                                        <p><span class="card-text small fw-bold">Arcade</span><br><span class="card-text small">$9/mo</span></p>
+                                                    </div>
+                                                    <div class="yearly">
+                                                        <p><span class="card-text small fw-bold">Arcade</span><br><span class="card-text small text-muted">$90/yr</span><br><span class="card-text small">2 months free</span></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card" style="width: 8rem;">
+                                            <div class="card-body">
+                                                <div class="card-title"><img src="./assets/images/icon-advanced.svg" alt="advanced icon"></div>
+                                                <div class="card_footer mt-3">
+                                                    <div class="monthly">
+                                                        <p><span class="card-text small fw-bold">Advanced</span><br><span class="card-text small">$12/mo</span></p>
+                                                    </div>
+                                                    <div class="yearly">
+                                                        <p><span class="card-text small fw-bold">Advanced</span><br><span class="card-text small text-muted">$120/yr</span><br><span class="card-text small">2 months free</span></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card" style="width: 8rem;">
+                                            <div class="card-body">
+                                                <div class="card-title"><img src="./assets/images/icon-pro.svg" alt="pro icon"></div>
+                                                <div class="card_footer mt-3">
+                                                    <div class="monthly">
+                                                        <p><span class="card-text small fw-bold">Pro</span><br><span class="card-text small">$15/mo</span></p>
+                                                    </div>
+                                                    <div class="yearly">
+                                                        <p><span class="card-text small fw-bold">Pro</span><br><span class="card-text small text-muted">$150/yr</span><br><span class="card-text small">2 months free</span></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="toggle-box form-check form-switch d-flex gap-4 mt-4 justify-content-center bg-light rounded-3 py-1">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault">Monthly</label>
+                                    <input class="form-check-input ms-2" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault">Yearly</label>
+                                </div>
+                            </div>
+                            <div class="add-ons">
+                                <div class="h3">Pick add-ons</div>
+                                <div class="text-muted">Add-ons help enhance your gaming experiance.</div>
+
+                                <div class="addOns_items mt-3">
+                                    <div class="select">
+                                        <div class="services">
+                                            <input type="checkbox" id="services">
+                                            <label for="services" class="small"><span class="fw-bold">Online service</span><br>Access to multiplayer games</label>
+                                            <span class="small text-primary monthly-addOns">+$1/mo</span>
+                                            <span class="small text-primary yearly-addOns">+$10/mo</span>
+                                        </div>
+                                        <div class="storage">
+                                            <input type="checkbox" id="storage">
+                                            <label for="storage" class="small"><span class="fw-bold">Larger storage</span><br>Extra 1TB of cloud save</label>
+                                            <span class="small text-primary monthly-addOns">+$2/mo</span>
+                                            <span class="small text-primary yearly-addOns">+$20/mo</span>
+                                        </div>
+                                        <div class="profile">
+                                            <input type="checkbox" id="profile">
+                                            <label for="profile" class="small"><span class="fw-bold">Customizable profile</span><br>Custom theme on your profile</label>
+                                            <span class="small text-primary monthly-addOns">+$2/mo</span>
+                                            <span class="small text-primary yearly-addOns">+$20/mo</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="finish-up">
+                                <div class="h3">Finishing up</div>
+                                <div class="text-muted">Double-check everything looks Ok before confirming.</div>
+
+                                <div class="collection-box">
+                                    <div class="choice-plan">
+                                        <div class="selected_plan">
+                                            <div class="plan">
+                                                <p class="fw-bold">Arcade <span class="package">(Monthly)</span></p>
+                                                <a href="" class="small">Change</a>
+                                            </div>
+                                            <div class="amount">
+                                                <span class="fw-bold plan-monthly">$9/mo</span>
+                                                <span class="fw-bold plan-yearly">$90/mo</span>
+                                            </div>
+                                        </div>
+                                        <div class="selected_adds">
+                                            <div class="add_1">
+                                                <p class="small text-muted">Online services</p>
+                                                <div class="add-amount">
+                                                    <span class="small add-monthly">+$1/mo</span>
+                                                    <span class="small add-yearly">+$10/mo</span>
+                                                </div>
+                                            </div>
+                                            <div class="add_2">
+                                                <p class="small text-muted">Larger storage</p>
+                                                <div class="add-amount">
+                                                    <span class="small add-monthly">+$2/mo</span>
+                                                    <span class="small add-yearly">+$2/mo</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="total">
+                                        <p class="small text-muted">Total (per month)</p>
+                                        <span class="p fw-bold text-primary">+$12/mo</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="appreciation text-center mt-5 p-5">
+                                <img src="./assets/images/icon-thank-you.svg" alt="thanks" class="thanks-Tick my-3">
+                                <h4>Thank you!</h4>
+                                <p class="text-muted small">Thanks for confirming your subscription! We hope you have fun using our platform. If you ever need support, please feel free to email us at support@loremgaming.com.</p>
+                            </div>
+                        </div>
+                        <!-- <div class="wing-footer mt-5 bg-white">
+                            <div class="btn btn-md text-muted return-btn">Go Back</div>
+                            <label for="btn" class="btn btn-md next-btn">Next step</label>
+                            <input type="button" id="btn">
+                            <div class="btn btn-md next-btn">Next step</div>
+                            <div class="btn btn-md confirm-btn">Confirm</div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
