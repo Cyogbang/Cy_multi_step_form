@@ -9,6 +9,7 @@ const PG_3 = document.querySelector (".add-ons");
 const PG_4 = document.querySelector (".finish-up");
 const PG_5 = document.querySelector (".appreciation");
 
+
 Step_1.onclick = () => {
     PG_1.style.display = "block";
     PG_2.style.display = "none";
@@ -38,28 +39,14 @@ Step_4.onclick = () => {
     PG_4.style.display = "block"; 
 }
 
-// bioNEXT.onclick = () => {
-//     let name = document.getElementById("client-name");
-//     let mail = document.getElementById("client-mail");
-//     let phone = document.getElementById("client-phone");
-
-//     is_string = function(mail) 
-
-//     if (name.value === ) {
-        
-//     } else {
-        
-//     }
-// }
 
     let name = document.getElementById ("client-name");
     let phone = document.getElementById ("client-phone");
     const bioNEXT = document.getElementById ("btn-1");
 
-function is_string(name) {
-    return typeof name === "string";
+function is_string(phone) {
+    return typeof phone === "string";
 }
-
 function is_number(phone) {
     return !isNaN(phone) && typeof phone === "number";
 }
@@ -67,12 +54,13 @@ function is_number(phone) {
 bioNEXT.onclick = () => {
     console.log (name.value);
     console.log (phone.value);
-  if (is_string(name.value) && is_number(phone.value)) { // Access the value of the input element
+  if (is_string(name.value) && name.value !="" && !isNaN(phone.value) && phone.value !="") { // Access the value of the input element
     console.log("well-done");
-    } else {
-    console.log("sorry");
     PG_1.style.display = "none";
     PG_2.style.display = "block";
     revert.style.opacity = "100";
+    } else {
+    console.log("sorry");
+    prompt("Some spaces not rightly inputed")
     }
 };
