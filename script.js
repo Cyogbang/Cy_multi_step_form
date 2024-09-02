@@ -8,6 +8,7 @@ const PG_2 = document.querySelector (".plans-info");
 const PG_3 = document.querySelector (".add-ons");
 const PG_4 = document.querySelector (".finish-up");
 const PG_5 = document.querySelector (".appreciation");
+const planNEXT = document.getElementById("btn-2");
 
 
 Step_1.onclick = () => {
@@ -61,6 +62,56 @@ bioNEXT.onclick = () => {
     revert.style.opacity = "100";
     } else {
     console.log("sorry");
-    prompt("Some spaces not rightly inputed")
+    prompt("Some spaces not rightly inputed");
     }
 };
+
+// planNEXT.onclick = () => {
+//     let toggler = document.getElementById("flexSwitchCheckDefault");
+//     let monthlyPlan = document.querySelector(".check1");
+//     let yearlyPlan = document.querySelector(".check2");
+
+//     if (toggler == role) {
+//         console.log("monthly");
+//     } else {
+//         console.log("yearly");
+//     }
+// }
+
+let toggler = document.getElementById("flexSwitchCheckDefault");
+let card1 = document.querySelector(".yearly1");
+let card2 = document.querySelector(".yearly2");
+let card3 = document.querySelector(".yearly3");
+const monthly = document.querySelectorAll(".monthly");
+
+let monthlyPlan = () => {
+    console.log("monthly");
+};
+let yearlyPlan = () => {
+    console.log("yearly");
+    card1.innerHTML = '<p><span class="card-text small fw-bold">Arcade</span><br><span class="card-text small text-muted">$90/yr</span><br><span class="card-text small">2 months free</span></p>'
+    card2.innerHTML = '<p><span class="card-text small fw-bold">Advanced</span><br><span class="card-text small text-muted">$120/yr</span><br><span class="card-text small">2 months free</span></p>'
+    card3.innerHTML = '<p><span class="card-text small fw-bold">Pro</span><br><span class="card-text small text-muted">$150/yr</span><br><span class="card-text small">2 months free</span></p>'
+    monthly.style.display = "none";
+};
+let currentPlan = monthlyPlan;
+toggler.addEventListener("click", () => {
+    if (currentPlan === monthlyPlan) {
+        currentPlan = yearlyPlan;
+    } else {
+        currentPlan = monthlyPlan;
+    }
+    currentPlan();
+})
+
+// function choosePlan(choice){
+//     let toggler = document.getElementById("flexSwitchCheckDefault");
+//     let monthlyPlan = document.querySelector(".check1");
+//     let yearlyPlan = document.querySelector(".check2");
+
+//     if (toggler == choice) {
+//         console.log("monthly");
+//     } else {
+//         console.log("yearly");
+//     }
+// }
