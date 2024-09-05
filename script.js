@@ -20,6 +20,8 @@ Step_1.onclick = () => {
 
 Step_2.onclick = () => {
     validatePG1();
+    PG_3.style.display = "none";
+    PG_4.style.display = "none";
 }
 
 Step_3.onclick = () => {
